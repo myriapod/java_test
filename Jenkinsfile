@@ -8,6 +8,7 @@ pipeline {
             var1 = 'bonjour'
           }
           steps {
+            sh 'echo "phase de test"'
             sh 'mvn clean test'
           }
         }
