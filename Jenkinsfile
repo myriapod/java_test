@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'test'
-    }
-
-  }
+  agent none
   stages {
     stage('test') {
       parallel {
@@ -36,7 +31,7 @@ pipeline {
 
     stage('end') {
       steps {
-        sh 'echo "Fin des tâches, ça s\'est bien passé"'
+        sh 'echo "Fin des tÃ¢ches, Ã§a s\'est bien passÃ©"'
       }
     }
 
