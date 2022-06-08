@@ -14,7 +14,7 @@ pipeline {
     stage('build') {
       steps {
         git(url: 'https://github.com/kliakos/sparkjava-war-example.git', branch: 'main')
-        sh 'mvn clean build'
+        sh 'mvn clean install'
       }
     }
 
